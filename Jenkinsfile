@@ -9,7 +9,7 @@ pipeline {
 
     stage('Going into folder') {
       steps {
-        sh '''cd jenkins
+        sh '''ls -1
 '''
       }
     }
