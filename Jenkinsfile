@@ -9,8 +9,14 @@ pipeline {
 
     stage('Going into folder') {
       steps {
-        sh '''ls -la
+        sh '''cd Jenkins
 '''
+      }
+    }
+
+    stage('running js file') {
+      steps {
+        sh 'node hello.js'
       }
     }
 
