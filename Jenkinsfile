@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Retrieving repo') {
       steps {
-        sh 'git clone https://github.com/UserAhmad2001/Jenkins.git main'
+        git(url: 'https://github.com/UserAhmad2001/Jenkins.git', branch: 'main')
       }
     }
 
